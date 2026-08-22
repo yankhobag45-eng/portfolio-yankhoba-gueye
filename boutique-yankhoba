@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yankhoba Style - Boutique à Dakar</title>
+  <style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body { background: #f8f8f8; color: #333; line-height: 1.6; }
+    /* 1. HEADER + HERO */   header { background: #111; color: white; padding: 15px 20px; position: sticky; top: 0; z-index: 10; }
+    header h2 { text-align: center; }
+    .hero { padding: 80px 20px; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1200/500?fashion'); background-size: cover; background-position: center; color: white; text-align: center; }
+    .hero h1 { font-size: 2.2rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.1rem; margin-bottom: 20px; }
+    .btn-whatsapp { background: #25D366; color: white; padding: 14px 28px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; transition: 0.3s; }
+    .btn-whatsapp:hover { background: #1ebe5b; transform: scale(1.05); }
+    /* 2. SECTION PRODUITS */
+    .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+    .titre-section { text-align: center; font-size: 2rem; margin-bottom: 30px; }
+    .produits { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+    .produit { background: white; border-radius: 15px; padding: 15px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: 0.3s; }
+    .produit:hover { transform: translateY(-5px); }
+    .produit img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; }
+    .produit h3 { margin: 12px 0 5px; }
+    .prix { color: #25D366; font-size: 1.3rem; font-weight: bold; margin-bottom: 10px; }
+    /* 3. SECTION À PROPOS */
+    .a-propos { background: white; padding: 50px 20px; text-align: center; }
+    .a-propos p { max-width: 700px; margin: auto; font-size: 1.1rem; }
+    /* 4. SECTION AVIS CLIENTS */
+    .avis { background: #f0f0f0; padding: 50px 20px; }
+    .avis-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1000px; margin: auto; }
+    .avis-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    .etoiles { color: #FFD700; margin-bottom: 10px; }
+    /* 5. FOOTER + CONTACT */
+    footer { background: #111; color: white; text-align: center; padding: 30px 20px; }
+    footer a { color: #25D366; text-decoration: none; }
+    /* RESPONSIVE MOBILE */
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.8rem; }
+      .titre-section { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Yankhoba Style</h2>
+  </header>
+  <section class="hero">
+    <h1>Les meilleures tendances à Dakar</h1>
+    <p>Qualité premium | Livraison 24h partout au Sénégal</p>
+    <a href="https://wa.me/221786809553" class="btn-whatsapp">Commander sur WhatsApp</a>
+    </section>
+  <section class="container">
+    <h2 class="titre-section">Nos Produits Phares</h2>
+    <div class="produits">
+      <div class="produit">
+        <img src="https://picsum.photos/300/300?fashion1" alt="T-shirt">
+        <h3>T-shirt Oversize</h3>
+        <p class="prix">8 000 FCFA</p>
+        <a href="https://wa.me/221786809553?text=Bonjour, je veux le T-shirt Oversize" class="btn-whatsapp">Commander</a>
+      </div>
+      <div class="produit">
+        <img src="https://picsum.photos/300/300?fashion2" alt="Chemise">
+        <h3>Chemise Wax Moderne</h3>
+        <p class="prix">15 000 FCFA</p>
+        <a href="https://wa.me/221786809553?text=Bonjour, je veux la Chemise Wax" class="btn-whatsapp">Commander</a>
+      </div>
+      <div class="produit">
+        <img src="https://picsum.photos/300/300?fashion3" alt="Jean">
+        <h3>Jean Slim Premium</h3>
+        <p class="prix">12 000 FCFA</p>
+        <a href="https://wa.me/221786809553?text=Bonjour, je veux le Jean Slim" class="btn-whatsapp">Commander</a>
+      </div>
+    <div class="produit">
+  <img src="https://picsum.photos/300/300?fashion4" alt="Robe">
+  <h3>Robe Élégante</h3>
+  <p class="prix">25 000 FCFA</p>
+  <a href="https://wa.me/221786809553?text=Bonjour, je veux la Robe Élégante" class="btn-whatsapp">Commander</a>
+</div>
+<section class="a-propos">
+  <h2 class="titre-section">À Propos de Nous</h2>
+  <p>Chez <b>Yankhoba Style</b>, on vous propose des vêtements tendance et de qualité à prix abordable. Basés à Dakar, nous livrons partout au Sénégal en 24h. Votre satisfaction est notre priorité. Faites confiance à une boutique 100% sénégalaise 🇸🇳</p>
+</section>
+  <section class="avis">
+    <h2 class="titre-section">Ce que disent nos clients</h2>
+    <div class="avis-grid">
+      <div class="avis-card">
+        <div class="etoiles">★★★</div>
+        <p>"Livraison rapide et qualité au top ! Je recommande Yankhoba Style à 100%"</p>
+        <b>- Aïcha D.</b>
+      </div>
+      <div class="avis-card">
+        <div class="etoiles">★★★★★</div>
+        <p>"Les prix sont abordables et le service client sur WhatsApp est super réactif."</p>
+        <b>- Moussa K.</b>
+      </div>
+      <div class="avis-card">
+        <div class="etoiles">★★★</div>
+        <p>"J’ai commandé ma chemise Wax, elle est magnifique. Merci !"</p>
+        <b>- Fatou S.</b>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p><b>Contact WhatsApp:</b> <a href="https://wa.me/221786809553">+221 78 680 95 53</a></p>
+    <p>Dakar, Sénégal | © 2026 Yankhoba Style</p>
+  </footer>
+</body>
+</html>
