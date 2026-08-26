@@ -1,77 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yankhoba Style - Boutique en ligne</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
-    header { background: #1a1a1a; color: white; padding: 20px; text-align: center; }
-    header h1 { margin: 0; color: #d4af37; }
-    .produits { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
-    .produit { background: white; border-radius: 10px; padding: 15px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .produit img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
-    .prix { color: #d4af37; font-size: 20px; font-weight: bold; }
-    .btn { background: #d4af37; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
-    footer { background: #1a1a1a; color: white; text-align: center; padding: 15px; margin-top: 30px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YANKHOBA STYLE - Boutique</title>
+    <style>
+        body {font-family: Arial; margin:0; background:#f8f8f8;}
+        header {background:#2c3e50; color:white; padding:20px; text-align:center;}
+        .produits {display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:20px; padding:20px;}
+        .produit {background:white; border-radius:10px; padding:15px; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+        .produit img {width:100%; height:350px; object-fit:cover; border-radius:8px;}
+        .prix {color:#e74c3c; font-size:24px; font-weight:bold; margin:10px 0;}
+        .btn {background:#25D366; color:white; padding:12px 20px; text-decoration:none; border-radius:5px; display:inline-block; margin-top:10px;}
+        footer {background:#2c3e50; color:white; text-align:center; padding:20px; margin-top:30px;}
+    </style>
 </head>
 <body>
-  <header>
-    <h1>YANKHOBA STYLE</h1>
-    <p>La mode qui vous ressemble 🇸🇳</p>
-  </header>
-  <div class="produits">
-    <div class="produit">
-      <img src="https://via.placeholder.com/250x200/d4af37/000" alt="Boubou">
-      <h3>Boubou Traditionnel</h3>
-      <p class="prix">25 000 FCFA</p>
-      <button class="btn" onclick="commanderProduit('Boubou Traditionnel', '25000')">Commander</button>
+    <header>
+        <h1>👑 YANKHOBA STYLE 🇸🇳</h1>
+        <p>Mode Africaine & Moderne à Dakar</p>
+    </header>
+    <div class="produits">
+        <div class="produit">
+            <img src="robe.jpg.JPG" alt="Robe de soirée rouge">
+            <h2>Robe de Soirée Rouge</h2>
+            <p class="prix">20 000 FCFA</p>
+            <a href="https://wa.me/221786809553?text=Bonjour je veux la Robe de Soirée Rouge" class="btn">Commander sur WhatsApp</a>
+        </div>
+        <div class="produit">
+            <img src="chemise.jpg.PNG" alt="Chemise blanche moderne">
+            <h2>Chemise Blanche + Jean</h2>
+            <p class="prix">15 000 FCFA</p>
+            <a href="https://wa.me/221786809553?text=Bonjour je veux la Chemise Blanche" class="btn">Commander sur WhatsApp</a>
+        </div>
+        <div class="produit">
+            <img src="boubou.jpg.PNG" alt="T-shirt violet oversize">
+            <h2>T-shirt Violet Oversize</h2>
+            <p class="prix">12 000 FCFA</p>
+            <a href="https://wa.me/221786809553?text=Bonjour je veux le T-shirt Violet" class="btn">Commander sur WhatsApp</a>
+        </div>
     </div>
-    <div class="produit">
-      <img src="https://via.placeholder.com/250x200/000/fff" alt="Chemise">
-      <h3>Chemise Wax</h3>
-      <p class="prix">15 000 FCFA</p>
-      <button class="btn" onclick="commanderProduit('Chemise Wax', '15000')">Commander</button>
-    </div>
-    <div class="produit">
-      <img src="https://via.placeholder.com/250x200/d4af37/000" alt="Robe">
-      <h3>Robe Africaine</h3>
-      <p class="prix">20 000 FCFA</p>
-      <button class="btn" onclick="commanderProduit('Robe Africaine', '20000')">Commander</button>
-    </div>
-  </div>
-<!-- SECTION CONTACT -->
-<section id="contact" style="padding: 50px 20px; background: #f5f5f5; text-align: center;">
-  <h2 style="color: #1a1a1a;">Contactez-moi</h2>
-  <p>Vous avez un projet de site web ? Parlons-en sur WhatsApp !</p>
-  <input type="text" id="nom" placeholder="Votre Nom" style="padding: 10px; width: 80%; margin: 10px; border-radius: 5px; border: 1px solid #ccc;">
-  <br>
-  <textarea id="message" placeholder="Votre Message" rows="4" style="padding: 10px; width: 80%; margin: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
-  <br>
-  <button onclick="envoyerWhatsApp()" style="background: #25D366; color: white; padding: 15px 30px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
-    Envoyer sur WhatsApp
-  </button>
-</section>
-<script>
-function envoyerWhatsApp() {
-  var nom = document.getElementById('nom').value;
-  var message = document.getElementById('message').value;
-  var numero = "221786809553"; // <-- MET TON VRAI NUMERO ICI sans le +
-  var texte = "Bonjour Yankhoba, je m'appelle " + nom + ". " + message;
-  var url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(texte);
-  window.open(url, '_blank');
-}
-function commanderProduit(nomProduit, prix) {
-  var numero = "221786809553";
-  var texte = "Salut Yankhoba Style ! Je veux commander : " + nomProduit + " à " + prix + " FCFA. Merci !";
-  var url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(texte);
-  window.open(url, '_blank');
-}
-</script>
-  <footer>
-    <p>Contact WhatsApp: +221786809553 | Dakar, Sénégal</p>
-    <p>© 2026 Yankhoba Style</p>
-  </footer>
+    <footer>
+        <h3>Contactez-moi</h3>
+        <p>WhatsApp: +221 78 680 95 53</p>
+        <p>Dakar, Sénégal</p>
+    </footer>
 </body>
 </html>
