@@ -3,62 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YANKHOBA STYLE - Mode à Dakar</title>
+    <title>Yankhoba Gueye - Développeur Web</title>
     <style>
-        body {font-family: Arial; margin:0; background:#f8f8f8;}
-        header {background:#2c3e50; color:white; padding:30px 20px; text-align:center;}
-        header img {width:120px; height:120px; border-radius:50%; border:3px solid white; margin-bottom:10px;}
-        .about {background:white; padding:25px; margin:20px; border-radius:10px; text-align:center;}
-        .produits {display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:20px; padding:20px;}
-        .produit {background:white; border-radius:10px; padding:15px; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.1);}
-        .produit img {width:100%; height:350px; object-fit:cover; border-radius:8px;}
-        .prix {color:#e74c3c; font-size:24px; font-weight:bold; margin:10px 0;}
-        .btn {background:#25D366; color:white; padding:12px 20px; text-decoration:none; border-radius:5px; display:inline-block; margin-top:10px; font-weight:bold;}
-        footer {background:#2c3e50; color:white; text-align:center; padding:20px; margin-top:30px;}
+        body {font-family: 'Arial'; margin:0; background:#f5f5f5; color:#333; scroll-behavior:smooth;}
+        header {background:linear-gradient(135deg, #2c3e50, #D4AF37); color:white; padding:80px 20px; text-align:center;}
+        header img {width:150px; height:150px; border-radius:50%; border:4px solid white; margin-bottom:15px; object-fit:cover;}
+        nav {background:#2c3e50; padding:15px; text-align:center; position:sticky; top:0;}
+        nav a {color:white; text-decoration:none; margin:0 15px; font-weight:bold;}
+        .container {max-width:1200px; margin:auto; padding:20px;}
+        .about {background:white; padding:40px; margin:30px 0; border-radius:10px; text-align:center;}
+        .tech {background:#D4AF37; color:white; padding:6px 12px; border-radius:20px; display:inline-block; margin:5px; font-size:13px;}
+        .projets {display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:25px; margin:30px 0;}
+        .projet {background:white; border-radius:10px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition:0.3s;}
+        .projet:hover {transform:translateY(-5px);}
+        .projet img {width:100%; height:180px; object-fit:cover; border-radius:8px; margin-bottom:15px;}
+        .btn {background:#25D366; color:white; padding:10px 18px; text-decoration:none; border-radius:5px; display:inline-block; margin-top:10px;}
+        footer {background:#2c3e50; color:white; text-align:center; padding:40px 20px; margin-top:30px;}
+        h2 {text-align:center; margin-bottom:30px; color:#2c3e50;}
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.jpg.JPG" alt="Logo Yankhoba Style">
-        <h1>YANKHOBA STYLE</h1>
-        <p>Mode Africaine & Moderne à Dakar 🇸🇳</p>
+        <img src="moi.jpg" alt="Photo Yankhoba">
+        <h1>Yankhoba Gueye</h1>
+        <p>Développeur Web | Création de Sites Vitrines & Portfolios</p>
     </header>
 
-    <div class="about">
-        <h2>À Propos de Moi</h2>
-        <p>Salut ! Je suis Yankhoba. Je propose des tenues élégantes pour hommes et femmes. 
-        Qualité premium, prix abordables, livraison à Dakar. 
-        Faites vos commandes directement sur WhatsApp !</p>
+    <nav>
+        <a href="#about">À Propos</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div id="about" class="about">
+            <h2>À Propos de Moi</h2>
+            <p>Salut ! Je suis Yankhoba, développeur web basé à Dakar 🇸🇳. 
+            Je crée des sites modernes, rapides et responsives pour particuliers et entreprises.</p>
+            <span class="tech">HTML</span>
+            <span class="tech">CSS</span>
+            <span class="tech">JavaScript</span>
+            <span class="tech">GitHub</span>
+        </div>
+
+        <h2 id="projets">Mes 8 Projets</h2>
+        <div class="projets">
+            <div class="projet"><img src="siteweb.jpg" alt="Site Web"><h3>Création du Site Web</h3><p>Site vitrine complet et moderne</p><a href="#" class="btn">Voir Demo</a></div>
+            <div class="projet"><img src="portfolio.jpg" alt="Portfolio"><h3>Portfolio</h3><p>Portfolio personnel</p><a href="#" class="btn">Voir Demo</a></div>
+            <div class="projet"><img src="carte.jpg" alt="Carte"><h3>Carte de Visite Digitale</h3><p>Carte interactive WhatsApp</p><a href="#" class="btn">Voir Demo</a></div>
+            <div class="projet"><img src="barbershop.jpg" alt="Barber"><h3>Site Barbershop</h3><p>Site salon avec prise de RDV</p><a href="#" class="btn">Voir Demo</a></div>
+            <div class="projet"><img src="coiffure.jpg" alt="Coiffure"><h3>Site Coiffure</h3><p>Site salon femme</p><a href="#" class="btn">Voir Demo</a></div>
+            <div class="projet"><img src="contact.jpg" alt="Contact"><h3>Page Contact</h3><p>Formulaire + WhatsApp</p><a href="#" class="btn">Voir Demo</a></div>
+            <div class="projet"><img src="index.jpg" alt="Index"><h3>Page d'Accueil Index</h3><p>Modèle page d'accueil</p><a href="#" class="btn">Voir Demo</a></div>
+            <div class="projet"><img src="yankhoba-style.jpg" alt="Yankhoba Style"><h3>Yankhoba Style</h3><p>Site e-commerce mode</p><a href="#" class="btn">Voir Demo</a></div>
+        </div>
     </div>
 
-    <div class="produits">
-        <div class="produit">
-            <img src="1.jpg.JPG" alt="Robe de soirée rouge">
-            <h2>Robe de Soirée Rouge</h2>
-            <p class="prix">20 000 FCFA</p>
-            <a href="https://wa.me/221786809553?text=Bonjour je veux la Robe de Soirée Rouge" class="btn">Commander sur WhatsApp</a>
-        </div>
-
-        <div class="produit">
-            <img src="2.jpg.PNG" alt="Chemise blanche moderne">
-            <h2>Chemise Blanche + Jean</h2>
-            <p class="prix">15 000 FCFA</p>
-            <a href="https://wa.me/221786809553?text=Bonjour je veux la Chemise Blanche" class="btn">Commander sur WhatsApp</a>
-        </div>
-
-        <div class="produit">
-            <img src="3.jpg.PNG" alt="T-shirt violet oversize">
-            <h2>T-shirt Violet Oversize</h2>
-            <p class="prix">12 000 FCFA</p>
-            <a href="https://wa.me/221786809553?text=Bonjour je veux le T-shirt Violet" class="btn">Commander sur WhatsApp</a>
-        </div>
-    </div>
-
-    <footer>
-        <h3>Contactez-moi</h3>
-        <p>WhatsApp: +221 78 680 95 53</p>
-        <p>Dakar, Sénégal</p>
-        <p>© 2026 YANKHOBA STYLE</p>
+    <footer id="contact">
+        <h3>Travaillons Ensemble</h3>
+        <p>📱 WhatsApp: +221 78 680 95 53</p>
+        <p>📧 Email: tonemail@gmail.com</p>
+        <a href="https://wa.me/221786809553" class="btn">Écrire sur WhatsApp</a>
+        <p style="margin-top:20px;">© 2026 Yankhoba Gueye - Dakar, Sénégal</p>
     </footer>
 </body>
 </html>
